@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-template: 50px 0px 50px / 200px 1fr 300px;
+    margin: 15px 0px 0px 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template: 500px 50px 50px / 200px 1fr 300px;
+}
+
+.inbox, .starred, .snoozed, .important, .team, .projects, .personal {
+    margin: 10px 10px 20px 30px;
+}
+
+.chat img {
+    width: 50px;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+img b {
+    display: grid;
+    place-content: center;
+}
+
+span {
+    margin: 20px;
+}
+
+.emails, .email-example {
+    margin: 0px 0px 12px 0px;
+    border-bottom: 1px solid #eee;
+}
+
+.emails {
+    background-color: #f5f7f7;
+    overflow: auto;
+}
+
+input {
+    background-color: #f5f7f7;
+    border: 1px solid transparent;
+    font-size: 18px;
+}
+
+.fa {
+    font-size: 40px;
+    padding-left: 120px;
+}
+
+.toggle-settings {
+    display: inline;
+    background-color: rgb(206, 190, 190);
+}
+
+.cards img {
+    width: 65px;
+}
+
+.theme {
+    display: grid;
+    margin-top: 250px;
+}
+
+.cards {
+    display: grid;
+    grid-template: "1 2 3 4" 50px "5 6 7 8" 50px / 80px 80px;
+}
+
+.card-one, .card-two, .card-three, .card-four, .card-five, .card-six, .card-seven, .card-eight {
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 65px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    place-items: center;
+}
+
+@media screen and (max-width:800px) {
+    .sidebar, .toggle-settings {
+        display: none;
+    }
+    .emails, .email-example {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width:800px) {
+    i.fa {
+        display: none;
+    }
+}
